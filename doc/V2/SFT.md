@@ -12,7 +12,7 @@
 
 ![use](img/use.png)
 
-Application qui permet de créer des groupes - lesquels groupes centrés sur une fonction principale de scrutin ; qui permet de créer et voter des lois ainsiq qu'élire à des postes ou "mandats". Les Citoyens sont législateurs, créateurs et votant et tous sont susceptibles d'être élus à des postes/mandats. Ce scrutin (ou ce sondage) est recalculé en permanence et à chaque moment chaque résultat peut basculer ; les citoyens sont avertis pour un effet immédiat. Le procédé est intitulé Démocratie Flux Direct.
+Application qui permet de créer des groupes - lesquels groupes centrés sur une fonction principale de scrutin ; qui permet de créer et voter des lois ainsi qu'élire à des postes ou "mandats". Les Citoyens sont législateurs, créateurs et votant et tous sont susceptibles d'être élus à des postes/mandats. Ce scrutin (ou ce sondage) est recalculé en permanence et à chaque moment chaque résultat peut basculer ; les citoyens sont avertis pour un effet immédiat. Le procédé est intitulé Démocratie Flux Direct.
 
 ***
 
@@ -28,18 +28,18 @@ Shop pour l'achat : [wrapbootstrap](https://wrapbootstrap.com/theme/centaurus-WB
 
 ## III Utilisateur
 
-L'utilisateur entre, côté client une phrase secrétée qui génère une clé public, avec là qu'elle, il est identifié côté serveur. Si l'utilisateur doit faire une modification exigent son authentification, un message est signé côté client.
+L'utilisateur entre, côté client une phrase secrète qui génère une clé publique, avec laquelle, il est identifié côté serveur. Si l'utilisateur doit faire une modification exigeant son authentification, un message est signé côté client.
 Si le client se connecte pour la première fois et n'est pas reconnu par l'api, Un formulaire lui demande de finaliser son inscription avec les information suivante :
 
 * nom
 * prénom
 * email
 
-Apres la verification de mail, un nouveau utilisateur est créer dans la base de données et les info de connexion son retourner.
+Apres la verification de mail, un nouvel utilisateur est crée dans la base de données et les info de connexion son retournées.
 
 ### Fonctions et variables disponible dans le framework
 
-> Accès au information de l'utilisateur côté jQuery, dans toutes les fonctions du framework.
+> Accès aux informations de l'utilisateur côté jQuery, dans toutes les fonctions du framework.
 
 #### Variables disponibles.
 
@@ -92,7 +92,7 @@ var EncryptionResult = cryptico.encrypt('MESSAGE', 'clé publique du destinatair
 var EncryptionResult = cryptico.encrypt('MESSAGE', $.m.user.wallet.PublicKeyString);
 ```
 
-#### Les événement déclenché par la partie utilisateur
+#### Les événement déclenchés par la partie utilisateur
 
 | Event | Desc |
 |-------|------|
@@ -119,7 +119,7 @@ valide::btc_sign($bitcoinAdresse, $message, $signature);
 
 #### Couleur et logo du client
 
-> Déterminer automatiquement la couleur a partir de l'adresse bitcoin et son contraste.
+> Déterminer automatiquement la couleur à partir de l'adresse bitcoin et son contraste.
 
 ![User](img/user.jpg)
 
